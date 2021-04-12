@@ -1,0 +1,22 @@
+{
+	"name": "haze",
+	"version": "1.0.0",
+	"description": "A website for Haze, a videogame digital distribution service",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alfredoPark-48/haze.git"
+	},
+	"author": "Alfredo Jeonghyun Park",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alfredoPark-48/haze/issues"
+	},
+	"homepage": "https://github.com/alfredoPark-48/haze#readme",
+	"devDependencies": {
+		"node-sass": "^5.0.0"
+	}
+}
