@@ -1,0 +1,56 @@
+.navigation {
+	background-color: $color-black;
+	padding: 3rem 12rem;
+	@include flexdisplay;
+	justify-content: space-between;
+
+	&__box {
+		@include flexdisplay;
+	}
+
+	&__logo {
+		font-size: 3rem;
+		font-family: "Zen Dots", cursive;
+		margin-right: 4rem;
+		@include flexdisplay;
+
+		&--link {
+			color: $color-gray;
+			@include linkdefault;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		@include navigationitem;
+		@include flexdisplay;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+	}
+
+	&__link {
+		color: $color-gray;
+		@include linkdefault;
+		@include transition;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
+
+	&__button {
+		text-decoration: none;
+		background-color: $color-green;
+		padding: 0.5rem 1rem;
+		@include navigationitem;
+		@include transition;
+
+		&:hover {
+			transform: translateY(-0.3rem);
+		}
+	}
+}
