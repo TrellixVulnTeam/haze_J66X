@@ -1,0 +1,28 @@
+.header {
+	@include flexdisplay;
+	justify-content: space-between;
+	padding: 10rem;
+	position: relative;
+	background-image: linear-gradient(
+		to right,
+		$color-purple-dark,
+		$color-purple-light
+	);
+	z-index: -2;
+
+	&__container {
+		font-size: 3rem;
+
+		&:not(:last-child) {
+			margin-right: 5rem;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		z-index: -1;
+		justify-content: center;
+		width: 50rem;
+		left: 50%;
+	}
+}

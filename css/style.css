@@ -12,6 +12,25 @@ html {
 body {
   box-sizing: border-box; }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem;
+  position: relative;
+  background-image: linear-gradient(to right, #2a0845, #6441a5);
+  z-index: -2; }
+  .header__container {
+    font-size: 3rem; }
+    .header__container:not(:last-child) {
+      margin-right: 5rem; }
+  .header__img {
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+    width: 50rem;
+    left: 50%; }
+
 .navigation {
   background-color: #000;
   padding: 3rem 12rem;
