@@ -1,6 +1,6 @@
 .header {
 	@include flexdisplay;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 10rem;
 	position: relative;
 	background-image: linear-gradient(
@@ -8,7 +8,11 @@
 		$color-purple-dark,
 		$color-purple-light
 	);
-	z-index: -2;
+	color: $color-white;
+
+	&__logo {
+		@include logo;
+	}
 
 	&__container {
 		font-size: 3rem;
@@ -19,10 +23,45 @@
 	}
 
 	&__img {
-		position: absolute;
 		z-index: -1;
 		justify-content: center;
 		width: 50rem;
 		left: 50%;
+	}
+
+	&__players {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	&__text {
+		margin-bottom: 2rem;
+	}
+
+	&__online,
+	&__playing {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+
+		&--icon {
+			font-size: 1rem;
+			margin-right: 0.3rem;
+		}
+	}
+
+	&__online {
+		&--icon {
+			color: $color-blue-light;
+		}
+	}
+
+	&__playing {
+		&--icon {
+			color: $color-green;
+		}
+	}
+
+	&__button {
+		margin-top: 3rem;
 	}
 }

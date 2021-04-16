@@ -1,0 +1,21 @@
+.button {
+	&:link,
+	&:visited {
+		display: inline-block;
+		background-image: linear-gradient(
+			to right,
+			$color-blue-light,
+			$color-blue-dark
+		);
+		color: $color-white;
+		text-decoration: none;
+		font-size: 2rem;
+		text-transform: uppercase;
+		padding: 1rem 4rem;
+		@include transition;
+	}
+
+	&:hover {
+		transform: translateY(-0.3rem);
+	}
+}

@@ -10,42 +10,78 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+
+.button:link, .button:visited {
+  display: inline-block;
+  background-image: linear-gradient(to right, #4baff1, #1967b4);
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  transition: all 0.3s; }
+
+.button:hover {
+  transform: translateY(-0.3rem); }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10rem;
   position: relative;
   background-image: linear-gradient(to right, #2a0845, #6441a5);
-  z-index: -2; }
+  color: #fff; }
+  .header__logo {
+    font-family: "Zen Dots", cursive;
+    text-transform: uppercase;
+    font-weight: 400; }
   .header__container {
     font-size: 3rem; }
     .header__container:not(:last-child) {
       margin-right: 5rem; }
   .header__img {
-    position: absolute;
     z-index: -1;
     justify-content: center;
     width: 50rem;
     left: 50%; }
+  .header__players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .header__text {
+    margin-bottom: 2rem; }
+  .header__online, .header__playing {
+    font-size: 1.2rem;
+    text-transform: uppercase; }
+    .header__online--icon, .header__playing--icon {
+      font-size: 1rem;
+      margin-right: 0.3rem; }
+  .header__online--icon {
+    color: #4baff1; }
+  .header__playing--icon {
+    color: #5cc960; }
+  .header__button {
+    margin-top: 3rem; }
 
 .navigation {
-  background-color: #000;
-  padding: 3rem 12rem;
+  background-color: #281735;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
   .navigation__box {
     display: flex;
     align-items: center; }
   .navigation__logo {
     font-size: 3rem;
-    font-family: "Zen Dots", cursive;
     margin-right: 4rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    font-family: "Zen Dots", cursive;
+    text-transform: uppercase;
+    font-weight: 400; }
     .navigation__logo--link {
       color: #c3c3c3;
       text-decoration: none;
@@ -53,7 +89,6 @@ body {
   .navigation__list {
     list-style: none;
     color: #fff;
-    font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     display: flex;
@@ -72,7 +107,6 @@ body {
     background-color: #5cc960;
     padding: 0.5rem 1rem;
     color: #fff;
-    font-family: "Lato", sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     transition: all 0.3s; }

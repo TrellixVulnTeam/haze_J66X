@@ -9,6 +9,7 @@
 			src="https://kit.fontawesome.com/39b57f0073.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="index.js" defer></script>
 		<title>Haze</title>
 	</head>
 	<body>
@@ -43,7 +44,7 @@
 
 		<section class="header">
 			<div class="header__container">
-				<h2 class="header__logobox">Haze</h2>
+				<h2 class="header__logo">Haze</h2>
 				<p class="header__text">
 					Haze is the ultimate destination for playing, discussing, and creating
 					games.
@@ -51,22 +52,32 @@
 
 				<div class="header__players">
 					<div class="header__player">
-						<p class="header__online">Online</p>
+						<p class="header__online">
+							<i class="fas fa-circle header__online--icon"></i>
+							Online
+						</p>
 						<h3 class="header__online--total">9999</h3>
 					</div>
 
 					<div class="header__player">
-						<p class="header__playing">Playing now</p>
+						<p class="header__playing">
+							<i class="fas fa-circle header__playing--icon"></i>
+							Playing now
+						</p>
 						<h3 class="header__playing--total">9999</h3>
 					</div>
 				</div>
+
+				<a href="#" class="header__button button">Install Haze </a>
 			</div>
 
-			<img
-				src="img/games.jpg"
-				alt="Games. Image taken from https://www.epicgames.com/store/en-US/news/epic-games-store-update?lang=en-US"
-				class="header__img"
-			/>
+			<div class="header__container">
+				<img
+					src="img/games.jpg"
+					alt="Games. Image taken from https://www.epicgames.com/store/en-US/news/epic-games-store-update?lang=en-US"
+					class="header__img"
+				/>
+			</div>
 		</section>
 	</body>
 </html>

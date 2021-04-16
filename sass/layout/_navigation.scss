@@ -1,8 +1,8 @@
 .navigation {
-	background-color: $color-black;
-	padding: 3rem 12rem;
+	background-color: $color-navbar;
+	padding: 3rem 0;
 	@include flexdisplay;
-	justify-content: space-between;
+	justify-content: space-evenly;
 
 	&__box {
 		@include flexdisplay;
@@ -10,9 +10,9 @@
 
 	&__logo {
 		font-size: 3rem;
-		font-family: "Zen Dots", cursive;
 		margin-right: 4rem;
 		@include flexdisplay;
+		@include logo;
 
 		&--link {
 			color: $color-gray;
