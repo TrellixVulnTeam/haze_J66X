@@ -1,0 +1,21 @@
+.link {
+	&:link,
+	&:visited {
+		@include flexdisplay;
+		font-size: 2rem;
+		color: $color-blue-light;
+		text-decoration: none;
+	}
+
+	&--icon {
+		margin-left: 1rem;
+		font-size: 1.8rem;
+		@include transition;
+	}
+
+	&:hover {
+		.link--icon {
+			transform: translateX(1rem);
+		}
+	}
+}

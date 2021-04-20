@@ -26,6 +26,36 @@ body {
 .button:hover {
   transform: translateY(-0.3rem); }
 
+.link:link, .link:visited {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #4baff1;
+  text-decoration: none; }
+
+.link--icon {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  transition: all 0.3s; }
+
+.link:hover .link--icon {
+  transform: translateX(1rem); }
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: #2a0845;
+  padding: 10rem 5rem; }
+  .cta__heading {
+    font-size: 4.5rem; }
+  .cta__text {
+    font-size: 2rem;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 3rem; }
+
 .header {
   display: flex;
   align-items: center;
