@@ -3,16 +3,16 @@
 	flex-direction: column;
 	color: $color-white;
 	background-color: $color-purple-dark;
-	padding: 10rem 5rem;
+	@include padding-section;
 
 	&__heading {
-		font-size: 4.5rem;
+		@include heading;
 	}
 
 	&__text {
 		font-size: 2rem;
 		text-align: center;
 		width: 60%;
-  margin-bottom: 3rem;
+		margin-bottom: 3rem;
 	}
 }

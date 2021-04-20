@@ -56,6 +56,32 @@ body {
     width: 60%;
     margin-bottom: 3rem; }
 
+.features {
+  background-color: #19032b;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 5rem; }
+  .features__heading {
+    font-size: 4.5rem; }
+  .features__text {
+    width: 40%; }
+  .features__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    margin-top: 3rem; }
+  .features__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .features__description {
+    font-size: 1.6rem;
+    width: 80%; }
+
 .header {
   display: flex;
   align-items: center;

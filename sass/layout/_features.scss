@@ -1,0 +1,34 @@
+.features {
+	background-color: $color-purple-darkest;
+	color: $color-white;
+	text-align: center;
+	font-size: 2rem;
+	@include flexdisplay;
+	flex-direction: column;
+	@include padding-section;
+
+	&__heading {
+		@include heading;
+	}
+
+	&__text {
+		width: 40%;
+	}
+
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 5rem;
+		margin-top: 3rem;
+	}
+
+	&__container {
+		@include flexdisplay;
+		flex-direction: column;
+	}
+
+	&__description {
+		font-size: 1.6rem;
+		width: 80%;
+	}
+}
