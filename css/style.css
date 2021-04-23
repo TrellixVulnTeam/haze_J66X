@@ -73,14 +73,33 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    padding: 0 30rem; }
   .features__container {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    .features__container:hover .features__content {
+      background-color: rgba(144, 85, 255, 0.4);
+      border-radius: 1.5rem; }
+    .features__container:hover .features__iconbox {
+      background-color: #9055ff; }
+  .features__content {
+    padding: 1rem;
+    transition: all 0.3s; }
   .features__description {
-    font-size: 1.6rem;
-    width: 80%; }
+    font-size: 1.6rem; }
+  .features__iconbox {
+    background-color: #6441a5;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .features__icon {
+    font-size: 3rem; }
 
 .header {
   display: flex;

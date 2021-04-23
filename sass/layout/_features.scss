@@ -20,15 +20,43 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 5rem;
 		margin-top: 3rem;
+		padding: 0 30rem;
 	}
 
 	&__container {
 		@include flexdisplay;
 		flex-direction: column;
+
+		&:hover .features__content {
+			background-color: rgba($color-purple-medium, 0.4);
+			border-radius: 1.5rem;
+		}
+
+		&:hover .features__iconbox {
+			background-color: $color-purple-medium;
+		}
+	}
+
+	&__content {
+		padding: 1rem;
+		@include transition;
 	}
 
 	&__description {
 		font-size: 1.6rem;
-		width: 80%;
+	}
+
+	&__iconbox {
+		background-color: $color-purple-light;
+		height: 6rem;
+		width: 6rem;
+		border-radius: 50%;
+		@include transition;
+		@include flexdisplay;
+		justify-content: center;
+	}
+
+	&__icon {
+		font-size: 3rem;
 	}
 }
